@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Triqui</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Triqui</h1>
+        <div class="player-inputs">
+            <input type="text" id="playerX" placeholder="Nombre del Jugador X">
+            <input type="text" id="playerO" placeholder="Nombre del Jugador O">
+            <button onClick="iniciarJuego()">Iniciar Juego</button>
+        </div>
+
+        <div id="status" class="status"></div>
+        <div class="board" id="tablero">
+            <!-- Celdas se generan din�micamente -->
+        </div>
+        <button onClick="reiniciarJuego()" class="btn-reiniciar">Reiniciar Juego</button>
+    </div>
+    <script src="juego.js"></script>
+</body>
+</html>
+
